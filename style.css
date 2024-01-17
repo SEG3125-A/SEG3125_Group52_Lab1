@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+    color: #333;
+}
+
+#title h1 {
+    color: #333;
+}
+
+a {
+    color: #06c;
+}
+
+#survey-form {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    background: #28a745;
+    color: #fff;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#website-ui {
+    text-align: center; /* Center the image */
+    margin: 20px 0; /* Add some space around the image */
+}
+
+#ui-image {
+    max-width: 500px; /* Adjust the width as needed */
+    height: auto; /* This will keep the aspect ratio intact */
+    display: block; /* To center the image if needed */
+    margin: 0 auto; /* Center align the image */
+}
+
+#signature {
+    text-align: center; /* Center your signature */
+    margin-top: 40px; /* Add space above your signature */
+    font-size: 0.9em; /* Adjust the font size of your signature */
+    color: #333; /* Set the signature text color */
+}

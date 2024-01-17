@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon User Interface Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">
+        <h1>Amazon User Interface Survey</h1>
+        <p>Survey for <a href="https://www.amazon.com" target="_blank">Amazon.com</a></p>
+        <div id="website-ui">
+            <a href="https://www.amazon.com" target="_blank">
+                <img src="images/amazon_ui.jpg" alt="Amazon Website UI" id="ui-image">
+            </a>
+        </div>
+    </div>
+    <div id="survey-form">
+        <form action="submit-survey.html" method="post" id="survey-form">
+            <label for="frequency">How often do you use Amazon?</label>
+            <select id="frequency" name="frequency">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="rarely">Rarely</option>
+                <option value="never">Never</option>
+            </select>
+
+            <label for="navigation">Do you find Amazon easy to navigate?</label>
+            <div class="input-group">
+                <input type="radio" id="nav-yes" name="navigation" value="yes">
+                <label for="nav-yes">Yes</label>
+            </div>
+            <div class="input-group">
+                <input type="radio" id="nav-no" name="navigation" value="no">
+                <label for="nav-no">No</label>
+            </div>
+
+            <label>How would you rate the checkout process?</label>
+            <div class="input-group">
+                <input type="radio" id="checkout-excellent" name="checkout" value="excellent">
+                <label for="checkout-excellent">Excellent</label>
+            </div>
+            <div class="input-group">
+                <input type="radio" id="checkout-good" name="checkout" value="good">
+                <label for="checkout-good">Good</label>
+            </div>
+            <div class="input-group">
+                <input type="radio" id="checkout-average" name="checkout" value="average">
+                <label for="checkout-average">Average</label>
+            </div>
+            <div class="input-group">
+                <input type="radio" id="checkout-poor" name="checkout" value="poor">
+                <label for="checkout-poor">Poor</label>
+            </div>
+            <div class="input-group">
+                <input type="radio" id="checkout-very-poor" name="checkout" value="very-poor">
+                <label for="checkout-very-poor">Very Poor</label>
+            </div>
+
+            <label for="satisfaction">Rate your overall satisfaction with Amazon:</label>
+            <select id="satisfaction" name="satisfaction">
+                <option value="1">1 - Very Unsatisfied</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Very Satisfied</option>
+            </select>
+
+            <label>What do you primarily purchase on Amazon?</label>
+            <div class="input-group">
+                <input type="checkbox" id="electronics" name="purchase" value="electronics">
+                <label for="electronics">Electronics</label>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="books" name="purchase" value="books">
+                <label for="books">Books</label>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="clothing" name="purchase" value="clothing">
+                <label for="clothing">Clothing</label>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="groceries" name="purchase" value="groceries">
+                <label for="groceries">Groceries</label>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="other" name="purchase" value="other">
+                <label for="other">Other</label>
+            </div>
+
+            <label for="experience">Please describe your last shopping experience:</label>
+            <textarea id="experience" name="experience" rows="4" cols="50" placeholder="Describe here"></textarea>
+
+            <label for="suggestions">Any suggestions for improvement?</label>
+            <textarea id="suggestions" name="suggestions" rows="4" cols="50" placeholder="Your suggestions"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="signature">
+        <p>Website designed by Eshal Kamran and Ravishan Jayasuriya</p>
+    </div>
+</body>
+</html>
